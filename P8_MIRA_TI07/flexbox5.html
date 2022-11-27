@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementasi flexbox</title>
+    
+</head>
+<style>
+    body{
+        background-color: pink;
+        
+    }
+    header{
+        background-color: gray;
+        width: 99%;
+        height: 100px;
+        margin: 10px;
+        float: left;
+        
+    }
+    aside{
+        background-color: rgb(98, 236, 98);
+        height: 440px;
+        width: 200px;
+        margin: 10px;
+        float: left;
+    }
+   
+ 
+    article {
+    float:inline-start;
+    justify-content: center;
+    background-color: rgb(224, 29, 29);
+    display: flex;
+    width: 89%;
+    height: 450px;
+    margin: 10px;
+   }
+  
+   footer{
+    background-color: grey;
+    width: 99%;
+    height: 107px;
+    margin: 0.8em;
+  }
+  
+ div img{
+    background-color: beige;
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+ }
+  
+</style>
+  <body>
+    <header>1</header>
+    <aside>1</aside>
+    <article>
+
+        <div class="img">
+            <img src="assets/images/ahin.jpg">
+            <img src="assets/images/cale.webp">
+            <img src="assets/images/mir.png">
+        </div>
+    </article>
+    <footer>2</footer>
+    
+   </body>
+</html>
