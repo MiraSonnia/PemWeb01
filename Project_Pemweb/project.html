@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MY RESTO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("image/WhatsApp\ Image\ 2022-11-29\ at\ 13.46.39.jpeg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Buka dari jam 10 sampai jam 10 </span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Pondok<br>Jawa Timur</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Jl Raya Condet No 10A</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Tentang Kami</span></h5>
+    <p>Restoran kami didirikan sejak tahun 2000 oleh Ibu Nia dengan resep yang diciptakan sendiri </p>
+    <p>Ibu Nia mendirikan resto ini untuk mengenalkan masakan Jawa Timur ke luar daerah </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Kami menggunakan bahan baru dan fresh setiap harinya"</i></p>
+    </div>
+    <img src="image/logo resto.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Buka:</strong> Setiap Hari dari jam 10 pagi sampai 10 malam</p>
+    <p><strong>Alamat:</strong> Jl Raya Condet No 10A, Jakarta</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Menu</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Makanan');" id="myLink">
+        <div class="w3-col s6 tablink">Makanan</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Minuman');">
+        <div class="w3-col s6 tablink">Minuman</div>
+      </a>
+    </div>
+
+    <div id="Makanan" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Rawon</h5>
+      <br>
+    
+      <h5>Soto Lamongan</h5>
+      <br>
+    
+      <h5>Rujak Cingur</h5>
+      <br>
+    
+      <h5>Sate Madura</h5>
+      <br>
+    
+      <h5>Bakso Malang</h5>
+    </div>
+
+    <div id="Minuman" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Wedang Jahe</h5>
+      <br>
+    
+      <h5>Es Buto Ijo</h5>
+      <br>
+    
+      <h5>Es Sinom</h5>
+      <br>
+    
+      <h5>Sirup Pokak</h5>
+      <br>
+    
+      <h5>Es Dawet</h5>
+
+    </div>  
+    <img src="image/WhatsApp Image 2022-11-29 at 13.46.32.jpeg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Tentang Masakan Jawa Timur</span></h5>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0kKcelVgfZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p><strong>Pesan Sekarang</strong>minta spesial hari ini atau kirimkan pesan kepada kami :</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nama" required name="Nama"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Berapa Banyak " required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2022-11-29"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Pesan/Kesan" required name="Pesan"></p>
+      <p><button class="w3-button w3-black" type="submit">Kirim</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+<footer>
+  <p align="center">Sosial Media Kita 
+    <br>
+    <a href="https://www.instagram.com/mirachan_0703/" align="center-right">instagram</a>
+    <br>
+    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiaWQifQ%3D%3D%22%7D">Twitter</a>
+  </p>
+</footer>
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
