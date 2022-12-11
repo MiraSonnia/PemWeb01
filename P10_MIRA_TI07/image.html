@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            margin: 50px 350px;
+            width: 500px;
+            height: 300px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+
+    <script>
+        function dekor1() {
+            dekor_1 = document.getElementById("home");
+            dekor_1.style.color = "aqua";
+        }
+
+        function dekor2() {
+            dekor_2 = document.getElementById("home");
+            dekor_2.style.color = "black";
+        }
+        
+        function imagepicker() {
+            const list_image = ["jaguar.jpg", "singa.JPG", "kucing.jpg", "ikan.jpg",]
+            let pilihan = document.getElementById("option");
+            if(pilihan.value == "Jaguar") {
+                let select = list_image[0];
+                document.getElementById("image").src = `image/${select}`
+                alert("Ini gambar jaguar.jpg")
+            }
+            
+
+            if(pilihan.value == "Singa") {
+                let select = list_image[1];
+                document.getElementById("image").src = `image/${select}`
+                alert("Ini gambar singa.JPG")
+            }
+
+            if(pilihan.value == "Kucing") {
+                let select = list_image[2];
+                document.getElementById("image").src = `image/${select}`
+                alert("Ini gambar kucing.jpg")
+            }
+
+            if(pilihan.value == "Ikan") {
+                let select = list_image[3];
+                document.getElementById("image").src = `image/${select}`
+                alert("Ini gambar ikan.jpg")
+            }            
+        }
+    </script>
+</head>
+<body>
+    <select id="option" onchange="imagepicker()">
+        <option value="" selected>Pilih Gambar</option>
+        <option value="Jaguar">Jaguar</option>
+        <option value="Singa">Singa</option>
+        <option value="Kucing">Kucing</option>
+        <option value="Ikan">Ikan</option>
+    </select>
+    <br>
+    <div class="container" id="container">
+        <div class="box" id="box">
+            <img id="image">
+        </div>
+    </div>
+
+
+</body>
+</html>
